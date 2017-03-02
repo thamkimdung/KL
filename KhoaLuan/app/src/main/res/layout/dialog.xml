@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="27sp"
+        android:text="USERS"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+   <TextView
+       android:layout_width="wrap_content"
+       android:textSize="20sp"
+       android:gravity="center_vertical"
+       android:id="@+id/tvID"
+       android:text="User ID: 1"
+       android:layout_weight="1"
+       android:layout_height="0dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="D.O.B:"
+            android:textSize="20sp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:hint="birth"
+            android:id="@+id/edtBirthday"
+            android:maxLength="8"
+            android:gravity="center"
+            android:ems="10"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Full name:"
+
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:singleLine="true"
+            android:gravity="center"
+            android:maxLength="30"
+            android:id="@+id/edtName"
+            android:hint="name"
+
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Job:"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="match_parent" />
+        <Spinner
+            android:layout_width="0dp"
+            android:id="@+id/spinner"
+            android:layout_weight="3"
+            android:layout_height="50dp"
+            android:prompt="@array/option"
+
+
+        />
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Gender:"
+
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="3"
+
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Male"
+
+                android:id="@+id/radioMale"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Female"
+                android:id="@+id/radioFemale"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

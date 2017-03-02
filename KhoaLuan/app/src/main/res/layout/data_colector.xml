@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="8"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="DATA COLLECTOR"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Vehicle:    "
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_width="0dp"
+                android:text="Walk"
+                android:layout_weight="1"
+                android:id="@+id/radioWalk"
+
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Run"
+                android:id="@+id/radioRun"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Lay"
+                android:id="@+id/radioLay"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Fall"
+                android:id="@+id/radioFall"
+                android:layout_height="match_parent" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Status:    "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Stop"
+                android:clickable="false"
+                android:id="@+id/radioStop"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Moving"
+                android:clickable="false"
+                android:id="@+id/radioMoving"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <Button
+            android:layout_width="0dp"
+            android:text="Stop"
+            android:background="@drawable/stop"
+            android:id="@+id/btnStop"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="0dp"
+            android:text="Start"
+            android:id="@+id/btnStart"
+            android:background="@drawable/pressed"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:layout_height="0dp">
+        <Button
+            android:layout_width="match_parent"
+            android:text="Delete Data"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/delete"
+            android:id="@+id/btnDeleteData"
+            android:layout_height="0dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="Stop"
+            android:id="@+id/tvStatus"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_height="0dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/btnBack"
+            android:background="@drawable/back"
+            android:text="Back"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>
